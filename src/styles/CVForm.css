@@ -1,0 +1,75 @@
+.cv-form {
+    display: flex;
+}
+.form-inputs {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: azure;
+    min-height: 100vh;
+    border-right: 2px solid black;
+}
+
+.cv-view {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    text-align: center;
+}
+.content {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    border: #333 solid 2px;
+    background-color: azure;
+}
+
+.name {
+    font-size: 3em;
+    margin-bottom: 0;
+    align-self: center;
+}
+.address {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-self: center;
+}
+.educate, 
+.practice {
+    display: flex;
+    flex-direction: column;
+}
+.educate h2, 
+.practice h2 {
+    text-align: center;
+    padding: 8px;
+    background-color: #333;
+    color: white;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+}
+.article p {
+    margin: 4px;
+}
+.school {
+    font-size: 1.7em;
+}
+.studate {
+    display: flex;
+    gap: 12px;
+}
+.article.second {
+    margin-bottom: 0;
+}
+.respond {
+    margin-left: 24px;
+}
