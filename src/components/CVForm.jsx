@@ -3,6 +3,12 @@ import GeneralInfo from './GeneralInfo.jsx';
 import Education from './Education.jsx';
 import PracticalExperience from './PracticalExperience.jsx';
 import '../styles/CVForm.css';
+import html2pdf from 'html2pdf.js';
+
+const exportAsPDF = () => {
+  const element = document.querySelector('.content'); // Replace 'divToExport' with your div's id
+  html2pdf().from(element).save('yourCV.pdf');
+};
 
 const CVForm = () => {
   const [generalInfo, setGeneralInfo] = useState({
@@ -99,6 +105,7 @@ const CVForm = () => {
         <button onClick={handleSubmit}>Submit</button>
       </div>
       <div className="cv-view">
+        <div><button className='export' onClick={exportAsPDF}>Export as PDF</button></div>
         <h2 className='title'>Formatted CV</h2>
         <div className='content' dangerouslySetInnerHTML={{ __html: formattedContent }} />
       </div>
